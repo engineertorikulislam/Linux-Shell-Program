@@ -6,11 +6,11 @@ echo "Enter a value: "
 
 read a
 
-echo "Enter a value: "
+echo "Enter b value: "
 
 read b
 
-echo "Enter a value: "
+echo "Enter c value: "
 
 read c
 
