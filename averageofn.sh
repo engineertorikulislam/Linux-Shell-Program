@@ -5,16 +5,16 @@
 
  read -p "Enter the size : " n
 
- sum=0
-
+  sum=0
+  
  echo "Enter the Values : "
 
-    for (( i=1; i<=n; i++ ))
+ for (( i=1; i<=n; i++ ))
     do 
-    read num
-    sum=$((sum+num))
-    done
+        read num
+        sum=$((sum+num))  # If i give a space after sum then shows no such file or directory
+done
 
  avg=`echo "scale=2;  $sum/ $n "  | bc` 
 
-    echo $avg
+ echo $avg

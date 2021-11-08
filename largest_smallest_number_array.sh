@@ -29,7 +29,7 @@
     for (( i=0; i<n; i++ ))
     do
     
-            if [ ${num[$i]} -lt $small ];  
+            if [ ${num[$i]} -lt $small ];   # [ ] should be space 
         
                     then  small=${num[$i]}
  
@@ -41,4 +41,4 @@
     done
 
     echo "The smallest number in this  array is :  $small"
-    echo "The greatest number in this  array is  $greatest"
+    echo "The greatest number in this  array is :  $greatest"
