@@ -1,64 +1,62 @@
 #Write a Shell program to find the sum of odd and even numbers from a set of numbers.
 
 
-# echo enter n value
+read -p "Enter Array  Size : " n
 
-# read n
 
-# sumodd=0
+    sumodd=0
 
-# sumeven=0
+    sumeven=0
 
-# i=0
+    i=0
 
-# while [ $i -ne $n ]
+while [ $i -ne $n ]
 
-# do
+do
 
-# echo "Enter Number"
+read -p "Enter Numbers : " num
 
-# read num
 
-# if [ `expr $num % 2` -ne 0 ]
+        if [ `expr $num % 2` -ne 0 ]
 
-# then
+        then
 
-# sumodd=`expr $sumodd + $num`
+                sumodd=`expr $sumodd + $num`
 
-# sumeven=`expr $sumeven+$num`
+                sumeven=`expr $sumeven+$num`
 
-# fi
+        fi
 
-# i=`expr $i + 1`
+        i=`expr $i + 1`
 
-# done
+done
 
-# echo Sum of odd numbers = $sumodd
+echo Sum of odd numbers = $sumodd
 
-# echo Sum of even numbers = $sumeven
+echo Sum of even numbers = $sumeven
 
-    echo "Enter Number :  "
-    read num
-    rev=0
-    even=0
-    odd=0
+    # read -p "Enter Number  :  " num
 
-    while [ $num -gt 0 ]
-    do
+    #     rev = 0
+    #     even = 0
+    #     odd = 0
 
-     tmp=$(( $num % 10 ))
+    #         while [ $num -gt 0 ]
+    #         do
+     
+    #         tmp=$(( $num % 10 ))
 
-     if(( $tmp % 2 == 0 ))
-    then
+    #  if(( $tmp % 2 == 0 ))
+    # then
 
-    even=$(( $even + $tmp ))
-    else
+    # even=$(( $even + $tmp ))
+    # else
 
-    odd=$(( $odd + $tmp ))
-    fi
-    rev=$(( $rev * 10 + $tmp ))
-    num=$(( $num / 10 ))
+    # odd=$(( $odd + $tmp ))
+    # fi
+    # rev=$(( $rev * 10 + $tmp ))
+    # num=$(( $num / 10 ))
     
-    done
-    echo the sum of even number $even
-    echo the sum of odd number $odd
+    # done
+    # echo the sum of even number $even
+    # echo the sum of odd number $odd
